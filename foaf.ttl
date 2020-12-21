@@ -1,0 +1,28 @@
+@base <https://raw.githubusercontent.com/mitko0/foaf/master/foaf.ttl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://raw.githubusercontent.com/mitko0/foaf/master/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <me> ;
+  foaf:primaryTopic <me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<me>
+  a foaf:Person ;
+  foaf:name "Mitko Miloshovski" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Mitko" ;
+  foaf:family_name "Miloshovski" ;
+  foaf:nick "mite" ;
+  foaf:mbox_sha1sum "403ca1553a9901ee07c56eb39e673d4b22c623df" ;
+  foaf:homepage <https://www.instagram.com/mitko.0/> ;
+  foaf:schoolHomepage <https://www.finki.ukim.mk/mk> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Hristijan Manasijev" ;
+    foaf:mbox_sha1sum "b535e11762ad4d804f8bd2d6d91f8e8628e88a37" ;
+    rdfs:seeAlso <https://kikomanasijev.com/foaf.ttl>
+  ] .
